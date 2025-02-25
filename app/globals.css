@@ -19,3 +19,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1{
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.wallpaper1{
+  background-image: url('https://images.unsplash.com/photo-1612838320303-3b3b3b3b3b3b');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

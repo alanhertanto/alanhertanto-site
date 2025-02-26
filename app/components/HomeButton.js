@@ -6,8 +6,8 @@ export default function HomeButton() {
 
   return (
     <button
-      className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gray-700 rounded-full"
+      className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gray-700 border-2 border-solid border-white rounded-full"
       onClick={() => router.push("/")}
-    ></button>
+    > <span class="homeScreenButton"><img src="./black-rounded.svg"></img></span></button>
   );
 }

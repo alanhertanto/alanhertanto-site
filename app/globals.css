@@ -27,8 +27,13 @@ h1{
 }
 
 .wallpaper1{
-  background-image: url('/public/home.jpg');
+  background-image: url('/home.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.homeScreenButton{
+  padding: 2px 2px 2px 2px;
+
 }

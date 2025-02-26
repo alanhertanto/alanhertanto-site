@@ -27,7 +27,7 @@ h1{
 }
 
 .wallpaper1{
-  background-image: url('https://images.unsplash.com/photo-1612838320303-3b3b3b3b3b3b');
+  background-image: url('/public/home.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

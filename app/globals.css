@@ -39,3 +39,10 @@ h1{
   color: white !important;
   border-radius: 50%;
 }
+.icon {
+  background-color: rgba(0, 0, 0, 0.3); /* Adds a slight background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+.icon img {
+  filter: brightness(0.9) contrast(1.2);
+}

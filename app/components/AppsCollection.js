@@ -40,7 +40,7 @@ export default function AppsCollection() {
                     </p>
                 </div>
 
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center border-2 border-white rounded-2xl">
                     <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl shadow-lg overflow-hidden"
                         onClick={(e) => handleClick(e, "https://noyomi.itch.io/test-site-turret")}>
                         <img src="./test-site-turret.png" className="w-16 h-16 text-white drop-shadow-lg" />

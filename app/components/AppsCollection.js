@@ -35,7 +35,7 @@ export default function AppsCollection() {
                         onClick={(e) => handleClick(e, "https://noyomi.itch.io/undercook-activity")}>
                         <img src="./undercook-activity.png" className="w-16 h-16 text-white drop-shadow-lg" />
                     </button>
-                    <p className="mt-2 text-white text-[min(12px,2vw)] text-center leading-tight">
+                    <p className="mt-2 text-white text-[min(6px,2vw)] text-center leading-tight">
                         Undercook Activity
                     </p>
                 </div>

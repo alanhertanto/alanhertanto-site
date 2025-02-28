@@ -31,11 +31,13 @@ export default function AppsCollection() {
         <>
             <div className="relative mt-4 grid grid-cols-4 gap-4 w-full absolute mb-20 ml-1">
                 <div className="flex flex-col items-center border-2 border-white rounded-2xl">
-                    <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl shadow-lg overflow-hidden "
+                    <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl shadow-lg overflow-hidden"
                         onClick={(e) => handleClick(e, "https://noyomi.itch.io/undercook-activity")}>
                         <img src="./undercook-activity.png" className="w-16 h-16 text-white drop-shadow-lg" />
                     </button>
-                    <p className="text-xs text-white mt-2">Undercook Activity</p>
+                    <p className="mt-2 text-white text-[min(12px,2vw)] text-center leading-tight">
+                        Undercook Activity
+                    </p>
                 </div>
 
                 <div className="flex flex-col items-center">
@@ -43,10 +45,11 @@ export default function AppsCollection() {
                         onClick={(e) => handleClick(e, "https://noyomi.itch.io/test-site-turret")}>
                         <img src="./test-site-turret.png" className="w-16 h-16 text-white drop-shadow-lg" />
                     </button>
-                    <p className="text-xs text-white mt-2">Test Site Turret</p>
+                    <p className="text-xs text-white mt-2 w-16 text-center truncate">
+                        Test Site Turret
+                    </p>
                 </div>
             </div>
-
 
             {/* App Launch Animation */}
             {

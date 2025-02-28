@@ -48,7 +48,7 @@ export default function AppsBottom() {
 
             {/* App Launch Animation */}
             {launching && (
-                <div 
+                <div
                     className="fixed bg-white rounded-2xl shadow-lg animate-app-launch"
                     style={{
                         position: "fixed",

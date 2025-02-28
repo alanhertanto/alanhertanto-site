@@ -33,3 +33,9 @@ h1{
   background-repeat: no-repeat;
 }
 
+
+[aria-selected="true"] {
+  background-color: #3329f7 !important; /* Ensure today's date is visible */
+  color: white !important;
+  border-radius: 50%;
+}

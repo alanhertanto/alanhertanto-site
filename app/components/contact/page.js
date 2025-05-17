@@ -1,3 +1,4 @@
+"use client";
 import PhoneFrame from "../PhoneFrame";
 import Navbar from "../Navbar";
 import BezelBottom from "../BezelBottom";

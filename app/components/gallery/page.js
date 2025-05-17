@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from "react";
-import GalleryCard from "./GalleryCard";
+import GalleryCard from "./Card";
 import Filter from "./Filter";
 import { motion, AnimatePresence } from "framer-motion";
 

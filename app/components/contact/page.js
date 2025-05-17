@@ -1,7 +1,7 @@
-import PhoneFrame from "../components/PhoneFrame";
-import Navbar from "../components/Navbar";
-import BezelBottom from "../components/BezelBottom";
-import AppsBottom from "../components/AppsBottom";
+import PhoneFrame from "../PhoneFrame";
+import Navbar from "../Navbar";
+import BezelBottom from "../BezelBottom";
+import AppsBottom from "../AppsBottom";
 
 export default function Contact() {
   return (

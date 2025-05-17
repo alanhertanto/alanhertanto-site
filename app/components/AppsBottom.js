@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { PhoneIcon, EnvelopeIcon, UserIcon, CameraIcon } from "@heroicons/react/24/solid";
+import { PhoneIcon, EnvelopeIcon, UserIcon, PhotoIcon } from "@heroicons/react/24/solid";
 
 export default function AppsBottom() {
     const router = useRouter();
@@ -41,8 +41,8 @@ export default function AppsBottom() {
                     <UserIcon className="w-8 h-8 text-white drop-shadow-lg" />
                 </button>
                 <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg"
-                    onClick={(e) => handleClick(e, "/portfolio")}>
-                    <CameraIcon className="w-8 h-8 text-white drop-shadow-lg" />
+                    onClick={(e) => handleClick(e, "/gallery")}>
+                    <PhotoIcon className="w-8 h-8 text-white drop-shadow-lg" />
                 </button>
             </div>
 

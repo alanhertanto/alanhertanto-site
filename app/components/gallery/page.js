@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from "react";
 import GalleryCard from "./GalleryCard";
 import Filter from "./Filter";

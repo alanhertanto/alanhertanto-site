@@ -4,7 +4,9 @@ export default function GalleryCard({ image, title, category }) {
       <img src={image} alt={title} className="w-full h-40 object-cover" />
       <div className="p-2">
         <h3 className="text-sm font-semibold">{title}</h3>
-        <p className="text-xs text-gray-400">{category}</p>
+        <p className="text-xs text-gray-400">
+          {Array.isArray(category) ? category.join(", ") : category}
+        </p>
       </div>
     </div>
   );

@@ -1,16 +1,16 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useSearchParams } from 'next/navigation';
 
 export default function PhoneFrame({ children }) {
-    const router = useRouter();
+    const searchParams = useSearchParams();
     const [isLandscape, setIsLandscape] = useState(false);
 
     useEffect(() => {
-        const query = new URLSearchParams(window.location.search);
-        setIsLandscape(query.get('landscape') === 'true');
-    }, [router.asPath]);
+        const landscape = searchParams.get('landscape') === 'true';
+        setIsLandscape(landscape);
+    }, [searchParams]);
 
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-900">

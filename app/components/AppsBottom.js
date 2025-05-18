@@ -24,12 +24,28 @@ export default function AppsBottom() {
         setTimeout(() => router.push(path), 700); // Navigate after animation
     };
 
+    const handleClickExternalLink = (event, path) => {
+        if (launching) return; // Prevent multiple clicks
+
+        const rect = event.currentTarget.getBoundingClientRect();
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+
+        setAppPosition({
+            x: rect.left + rect.width / 2,
+            y: rect.top + rect.height / 2,
+        });
+
+        setLaunching(true);
+        setTimeout(() => window.location.href=path, 700); // Navigate after animation
+    };
+
     return (
         <>
             {/* Bottom Navigation */}
             <div className="grid grid-cols-4 gap-4 w-full bottom-0 left-0 absolute mb-20 ml-1">
                 <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg"
-                    onClick={(e) => handleClick(e, "/contact")}>
+                    onClick={(e) => handleClickExternalLink(e,'https://wa.me/6289676277362') }>
                     <PhoneIcon className="w-8 h-8 text-white drop-shadow-lg" />
                 </button>
                 <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg"

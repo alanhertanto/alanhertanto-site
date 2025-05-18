@@ -46,7 +46,7 @@ const items = [
   },
   {
     title: "Mixed Reality PAL's Showcase",
-    image: "pal.png",
+    image: "PAL.png",
     category: ["Mixed Reality","Apps"],
   },
   {

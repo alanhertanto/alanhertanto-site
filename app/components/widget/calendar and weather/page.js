@@ -66,7 +66,7 @@ const CalendarWeather = () => {
                         <Calendar
                             aria-label="Calendar"
                             defaultValue={today(getLocalTimeZone())}
-                            className=""
+                            className="scale-75"
                         />
                     </div>
                 </div>

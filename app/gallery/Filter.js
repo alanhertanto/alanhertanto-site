@@ -1,4 +1,4 @@
-const categories = ["All", "Music", "Books", "Games"];
+const categories = ["All", "2D Games", "Virtual Reality","Augmented Reality","Mixed Reality", "Simulation", "Website", "Apps","3D Games","Single Player","Multiplayer"];
 
 export default function Filter({ activeFilter, onChange }) {
   return (

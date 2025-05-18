@@ -62,7 +62,7 @@ const CalendarWeather = () => {
             {/* Calendar Widget */}
             <div className="flex flex-col items-center">
                 <div className="w-40 h-40 flex items-center justify-center rounded-2xl bg-gradient-to-b from-gray-700 to-gray-600 shadow-lg overflow-hidden">
-                    <div className="transform">
+                    <div className="transform scale-75">
                         <Calendar
                             aria-label="Calendar"
                             defaultValue={today(getLocalTimeZone())}

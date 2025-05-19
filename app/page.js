@@ -1,9 +1,8 @@
-"use client";
 import PhoneFrame from "./components/PhoneFrame";
 import Navbar from "./components/Navbar";
 import BezelBottom from "./components/BezelBottom";
 import AppsBottom from "./components/AppsBottom";
-import CalendarWeather from "./components/widget/calendar and weather/page";
+import CalendarWeather from "./components/widget/calendar and weather";
 import AppsCollection from "./components/AppsCollection";
 
 export default function Home() {

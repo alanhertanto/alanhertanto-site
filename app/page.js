@@ -4,10 +4,12 @@ import BezelBottom from "./components/BezelBottom";
 import AppsBottom from "./components/AppsBottom";
 import CalendarWeather from "./components/widget/calendar and weather";
 import AppsCollection from "./components/AppsCollection";
+import ParticlesBackground from "./components/ParticlesBackground";
 
 export default function Home() {
   return (
     <PhoneFrame>
+      <ParticlesBackground />
       <Navbar />
       <div className="h-full flex flex-col mt-20 mb-20 items-start justify-start p-4 text-white text-xl font-semibold">
         <CalendarWeather />

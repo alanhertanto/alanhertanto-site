@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect } from "react";
 import { tsParticles } from "tsparticles-engine";
 import { loadLinksPreset } from "tsparticles-preset-links";

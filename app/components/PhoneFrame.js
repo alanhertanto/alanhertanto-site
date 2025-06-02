@@ -1,5 +1,5 @@
 'use client';
-import ParticlesBackground from "./components/ParticlesBackground";
+import ParticlesBackground from "./ParticlesBackground";
 
 export default function PhoneFrame({ children }) {
 

@@ -4,7 +4,7 @@ import BezelBottom from "./components/BezelBottom";
 import AppsBottom from "./components/AppsBottom";
 import CalendarWeather from "./components/widget/calendar and weather";
 import AppsCollection from "./components/AppsCollection";
-
+import { Analytics } from "@vercel/analytics/next"
 export default function Home() {
   return (
     <PhoneFrame>
@@ -15,7 +15,9 @@ export default function Home() {
       </div>
       <AppsBottom />
       <BezelBottom />
+      <Analytics />
     </PhoneFrame>
+    
   );
 }
 

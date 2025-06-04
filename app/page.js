@@ -27,7 +27,7 @@ export default function Home() {
 
    tour.addStep({
   id: 'step1',
-  text: 'Welcome! This is the **Home Button** — your central hub to reset or navigate back anytime.',
+  text: 'Welcome! This is the <strong>Home Button</strong> , your central hub to reset or navigate back anytime.',
   attachTo: {
     element: '.homeButton',
     on: 'top'
@@ -42,7 +42,7 @@ export default function Home() {
 
 tour.addStep({
   id: 'step2',
-  text: 'These are the **Launchable Apps** — feel free to explore and try them out!',
+  text: 'These are the <strong>Launchable Apps</strong> , feel free to explore and try them out!',
   attachTo: {
     element: '.launchableApps',
     on: 'bottom'
@@ -61,7 +61,7 @@ tour.addStep({
 
 tour.addStep({
   id: 'step3',
-  text: 'Need to reach me quickly? Tap this button to **chat with me via WhatsApp**.',
+  text: 'Need to reach me quickly? Tap this button to <strong>chat with me via WhatsApp</strong>.',
   attachTo: {
     element: '.callButton',
     on: 'top'
@@ -80,7 +80,7 @@ tour.addStep({
 
 tour.addStep({
   id: 'step4',
-  text: 'Have something to say? Drop your thoughts by clicking this **message button** — I’d love to hear from you.',
+  text: 'Have something to say? Drop your thoughts by clicking this <strong>message button</strong> , I’d love to hear from you.',
   attachTo: {
     element: '.messageButton',
     on: 'top'
@@ -99,7 +99,7 @@ tour.addStep({
 
 tour.addStep({
   id: 'step5',
-  text: 'Curious about who I am? Click here to **view my profile and learn more about me**.',
+  text: 'Curious about who I am? Click here to <strong>view my profile and learn more about me</strong>.',
   attachTo: {
     element: '.profileButton',
     on: 'top'
@@ -118,7 +118,7 @@ tour.addStep({
 
 tour.addStep({
   id: 'step6',
-  text: 'Want to see what I’ve built? This is the gateway to my **project gallery and documented works**.',
+  text: 'Want to see what I’ve built? This is the gateway to my <strong>project gallery and documented works</strong>.',
   attachTo: {
     element: '.galleryButton',
     on: 'top'
@@ -137,7 +137,7 @@ tour.addStep({
 
 tour.addStep({
   id: 'step7',
-  text: 'Thinking of collaborating with me? You’ll soon be able to **book a date directly from here!** (Coming soon)',
+  text: 'Thinking of collaborating with me? You’ll soon be able to <strong>book a date directly from here!</strong> (Coming soon)',
   attachTo: {
     element: '.calendar',
     on: 'bottom'

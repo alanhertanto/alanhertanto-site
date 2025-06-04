@@ -29,7 +29,7 @@ export default function CalendarWeather() {
     }, []);
 
     return (
-        <div className="flex gap-4 w-full justify-center items-center">
+        <div className="flex gap-4 w-full justify-center items-center ">
             {/* Weather Widget */}
             <div className="flex flex-col items-center">
                 <div className="w-40 h-40 flex flex-col items-center justify-center p-4 rounded-2xl bg-gray-700 text-white shadow-lg">
@@ -50,7 +50,7 @@ export default function CalendarWeather() {
             {/* Calendar Widget */}
             <div className="flex flex-col items-center">
                 <div className="w-40 h-40 flex items-center justify-center rounded-2xl bg-gradient-to-b from-gray-700 to-gray-600 shadow-lg overflow-hidden">
-                    <div className="transform scale-75">
+                    <div className="transform scale-75 calendar">
                         <Calendar />
                     </div>
                 </div>

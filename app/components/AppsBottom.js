@@ -60,20 +60,20 @@ export default function AppsBottom() {
         <>
             {/* Bottom Navigation */}
             <div className="grid grid-cols-4 gap-4 w-full bottom-0 left-0 absolute mb-20 ml-1">
-                <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg"
+                <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg callButton"
                     onClick={(e) => { handleClickExternalLink(e, 'https://wa.me/6289676277362') }}>
                     <PhoneIcon className="w-8 h-8 text-white drop-shadow-lg" />
                 </button>
-                <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg"
+                <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg messageButton"
                     onClick={(e) => handleClick(e, "/guest-book")}>
                     <EnvelopeIcon className="w-8 h-8 text-white drop-shadow-lg" />
                 </button>
 
-                <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg"
+                <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg profileButton"
                     onClick={(e) => handleClick(e, "/about")}>
                     <UserIcon className="w-8 h-8 text-white drop-shadow-lg" />
                 </button>
-                <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg"
+                <button className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-b from-yellow-400 to-yellow-600 shadow-lg galleryButton"
                     onClick={(e) => handleClick(e, "/gallery")}>
                     <PhotoIcon className="w-8 h-8 text-white drop-shadow-lg" />
                 </button>

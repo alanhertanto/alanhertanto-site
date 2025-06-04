@@ -152,6 +152,7 @@ tour.addStep({
       action: tour.complete
     }
   ]
+  //
 });
 
 

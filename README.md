@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Alan Hertanto – Personal Portfolio Website
+Welcome to the official repository of Alan Hertanto’s personal portfolio website. This platform serves to showcase my professional projects, skills, and background, providing a centralized space for prospective clients, collaborators, and employers to learn more about my work.
 
-## Getting Started
+Technology Stack
+Next.js: A React framework optimized for server-side rendering and static site generation, ensuring fast and SEO-friendly web pages.
 
-First, run the development server:
+Tailwind CSS: A utility-first CSS framework for rapid and consistent styling.
 
-```bash
+next/font: Utilized for optimized font loading to enhance performance and accessibility.
+
+Vercel: Hosting and deployment platform, providing seamless continuous integration and delivery.
+
+Features
+Responsive, clean, and professional design tailored for a portfolio presentation.
+
+Multiple sections highlighting projects, skills, and professional background.
+
+Contact information with direct links to social media and communication channels.
+
+SEO-optimized with proper metadata for better discoverability.
+
+Optimized performance leveraging Next.js features and Tailwind CSS.
+
+Getting Started
+Prerequisites
+Node.js (version 16 or higher recommended)
+
+npm or yarn package manager
+
+Installation and Development
+bash
+Copy
+Edit
+git clone https://github.com/alanhertanto/alanhertanto-site.git
+cd alanhertanto-site
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open your browser and navigate to http://localhost:3000 to view the site locally.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Building for Production
+bash
+Copy
+Edit
+npm run build
+npm run start
+Deployment
+This project is deployed on Vercel, which provides optimized hosting tailored for Next.js applications.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Social & Contact
+Website: https://alanhertanto-site.vercel.app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+GitHub: https://github.com/alanhertanto
 
-## Learn More
+LinkedIn: https://linkedin.com/in/alanhertanto
 
-To learn more about Next.js, take a look at the following resources:
+Twitter: https://twitter.com/alanhertanto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Email: alan.hertanto@example.com (replace with your actual email)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contribution
+Contributions and suggestions are welcome. Feel free to open issues or submit pull requests. Please ensure any code follows existing style and testing guidelines.
 
-## Deploy on Vercel
+Future Plans
+Add multilingual support to reach a broader audience.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Integrate a blog section for sharing insights and technical articles.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Implement additional interactive portfolio features and analytics.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+

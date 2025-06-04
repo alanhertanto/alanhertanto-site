@@ -25,131 +25,135 @@ export default function Home() {
       }
     });
 
-    tour.addStep({
-      id: 'step1',
-      text: 'This is Home Button.',
-      attachTo: {
-        element: '.homeButton',
-        on: 'top'
-      },
-      buttons: [
-        {
-          text: 'Next',
-          action: tour.next
-        }
-      ]
-    });
+   tour.addStep({
+  id: 'step1',
+  text: 'Welcome! This is the **Home Button** — your central hub to reset or navigate back anytime.',
+  attachTo: {
+    element: '.homeButton',
+    on: 'top'
+  },
+  buttons: [
+    {
+      text: 'Next',
+      action: tour.next
+    }
+  ]
+});
 
-    tour.addStep({
-      id: 'step2',
-      text: 'This is Launchable Application You Can Play.',
-      attachTo: {
-        element: '.launchableApps',
-        on: 'bottom'
-      },
-      buttons: [
-        {
-          text: 'Previous',
-          action: tour.back
-        },
-        {
-          text: 'Next',
-          action: tour.next
-        }
-      ]
-    });
-    tour.addStep({
-      id: 'step3',
-      text: 'You Can Message Me By WhatsApp here.',
-      attachTo: {
-        element: '.callButton',
-        on: 'top'
-      },
-      buttons: [
-        {
-          text: 'Previous',
-          action: tour.back
-        },
-        {
-          text: 'Next',
-          action: tour.next
-        }
-      ]
-    });
-    tour.addStep({
-      id: 'step4',
-      text: 'Please Leave Your Impression Here.',
-      attachTo: {
-        element: '.messageButton',
-        on: 'top'
-      },
-      buttons: [
-        {
-          text: 'Previous',
-          action: tour.back
-        },
-        {
-          text: 'Next',
-          action: tour.next
-        }
-      ]
-    });
+tour.addStep({
+  id: 'step2',
+  text: 'These are the **Launchable Apps** — feel free to explore and try them out!',
+  attachTo: {
+    element: '.launchableApps',
+    on: 'bottom'
+  },
+  buttons: [
+    {
+      text: 'Previous',
+      action: tour.back
+    },
+    {
+      text: 'Next',
+      action: tour.next
+    }
+  ]
+});
 
-    tour.addStep({
-      id: 'step5',
-      text: 'You Can Found More About Me Here.',
-      attachTo: {
-        element: '.profileButton',
-        on: 'top'
-      },
-      buttons: [
-        {
-          text: 'Previous',
-          action: tour.back
-        },
-        {
-          text: 'Next',
-          action: tour.next
-        }
-      ]
-    });
+tour.addStep({
+  id: 'step3',
+  text: 'Need to reach me quickly? Tap this button to **chat with me via WhatsApp**.',
+  attachTo: {
+    element: '.callButton',
+    on: 'top'
+  },
+  buttons: [
+    {
+      text: 'Previous',
+      action: tour.back
+    },
+    {
+      text: 'Next',
+      action: tour.next
+    }
+  ]
+});
 
-    tour.addStep({
-      id: 'step6',
-      text: 'You can find All of My Documented Works Here.',
-      attachTo: {
-        element: '.galleryButton',
-        on: 'top'
-      },
-      buttons: [
-        {
-          text: 'Previous',
-          action: tour.back
-        },
-        {
-          text: 'Next',
-          action: tour.next
-        }
-      ]
-    });
-    tour.addStep({
-      id: 'step7',
-      text: 'Want To Book Me For Your Project? You Can Assigned Your Available Date Here. (Still In Development)',
-      attachTo: {
-        element: '.calendar',
-        on: 'bottom'
-      },
-      buttons: [
-        {
-          text: 'Previous',
-          action: tour.back
-        },
-        {
-          text: 'Finish Tour',
-          action: tour.next
-        }
-      ]
-    });
+tour.addStep({
+  id: 'step4',
+  text: 'Have something to say? Drop your thoughts by clicking this **message button** — I’d love to hear from you.',
+  attachTo: {
+    element: '.messageButton',
+    on: 'top'
+  },
+  buttons: [
+    {
+      text: 'Previous',
+      action: tour.back
+    },
+    {
+      text: 'Next',
+      action: tour.next
+    }
+  ]
+});
+
+tour.addStep({
+  id: 'step5',
+  text: 'Curious about who I am? Click here to **view my profile and learn more about me**.',
+  attachTo: {
+    element: '.profileButton',
+    on: 'top'
+  },
+  buttons: [
+    {
+      text: 'Previous',
+      action: tour.back
+    },
+    {
+      text: 'Next',
+      action: tour.next
+    }
+  ]
+});
+
+tour.addStep({
+  id: 'step6',
+  text: 'Want to see what I’ve built? This is the gateway to my **project gallery and documented works**.',
+  attachTo: {
+    element: '.galleryButton',
+    on: 'top'
+  },
+  buttons: [
+    {
+      text: 'Previous',
+      action: tour.back
+    },
+    {
+      text: 'Next',
+      action: tour.next
+    }
+  ]
+});
+
+tour.addStep({
+  id: 'step7',
+  text: 'Thinking of collaborating with me? You’ll soon be able to **book a date directly from here!** (Coming soon)',
+  attachTo: {
+    element: '.calendar',
+    on: 'bottom'
+  },
+  buttons: [
+    {
+      text: 'Previous',
+      action: tour.back
+    },
+    {
+      text: 'Finish Tour',
+      action: tour.complete // better than `tour.next` for last step
+    }
+  ]
+});
+
 
     tour.start();
   }, []);

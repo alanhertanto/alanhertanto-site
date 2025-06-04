@@ -149,7 +149,7 @@ tour.addStep({
     },
     {
       text: 'Finish Tour',
-      action: tour.complete // better than `tour.next` for last step
+      action: tour.complete
     }
   ]
 });

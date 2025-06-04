@@ -2,6 +2,8 @@
 
 Welcome to the official repository of Alan Hertanto’s personal portfolio website. This platform serves to showcase my professional projects, skills, and background, providing a centralized space for prospective clients, collaborators, and employers to learn more about my work.
 
+>**[LIVE DEMO](https://www.alanhertantog.web.id/)**
+
 ## Technology Stack
 
 - **Next.js**: A React framework optimized for server-side rendering and static site generation, ensuring fast and SEO-friendly web pages.

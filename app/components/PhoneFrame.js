@@ -18,8 +18,9 @@ export default function PhoneFrame({ children }) {
 
             {/* Left Handwritten SVG */}
             {!isAndroid && (
-               <div className="absolute left-0 text-white max-w-[250px] px-4">
-                    <h2 className="text-2xl font-bold mb-2">Alan Hertanto Guspermana</h2>
+               <div className="flex left-0 text-white  px-4">
+                    {/* <h2 className="text-2xl font-bold mb-2">Alan Hertanto Guspermana</h2>
+                    <p className="text-lg font-medium text-gray-300">Versatile developer specializing in Unity, WebGL, VR, AR, and multiplayer networking, with strong skills in backend development, AI integration, and asset optimization. Dedicated to crafting polished, engaging interactive experiences across platforms.</p> */}
                 </div>
             )}
 
@@ -30,14 +31,6 @@ export default function PhoneFrame({ children }) {
                     {children}
                 </div>
             </div>
-
-            {/* Right Handwritten SVG */}
-            {!isAndroid && (
-                <div className="absolute right-0 text-white max-w-[250px] px-4">
-                    <h2 className="text-lg font-medium text-gray-300">Versatile developer specializing in Unity, WebGL, VR, AR, and multiplayer networking, with strong skills in backend development, AI integration, and asset optimization. Dedicated to crafting polished, engaging interactive experiences across platforms.</h2>
-                </div>
-            )}
-
         </div>
     );
 }

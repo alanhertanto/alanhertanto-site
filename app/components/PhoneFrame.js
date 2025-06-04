@@ -17,12 +17,12 @@ export default function PhoneFrame({ children }) {
             <ParticlesBackground />
 
             {/* Left Handwritten SVG */}
-            {!isAndroid && (
+            {/* {!isAndroid && (
                <div className="flex left-0 text-white  px-4">
-                    {/* <h2 className="text-2xl font-bold mb-2">Alan Hertanto Guspermana</h2>
-                    <p className="text-lg font-medium text-gray-300">Versatile developer specializing in Unity, WebGL, VR, AR, and multiplayer networking, with strong skills in backend development, AI integration, and asset optimization. Dedicated to crafting polished, engaging interactive experiences across platforms.</p> */}
+                    <h2 className="text-2xl font-bold mb-2">Alan Hertanto Guspermana</h2>
+                    <p className="text-lg font-medium text-gray-300">Versatile developer specializing in Unity, WebGL, VR, AR, and multiplayer networking, with strong skills in backend development, AI integration, and asset optimization. Dedicated to crafting polished, engaging interactive experiences across platforms.</p>
                 </div>
-            )}
+            )} */}
 
 
             {/* Phone Frame */}

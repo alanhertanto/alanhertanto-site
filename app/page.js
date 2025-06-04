@@ -134,7 +134,7 @@ export default function Home() {
     });
     tour.addStep({
       id: 'step7',
-      text: 'Want To Book Me For Your Project? You Can Assigned Your Available Date Here.',
+      text: 'Want To Book Me For Your Project? You Can Assigned Your Available Date Here. (Still In Development)',
       attachTo: {
         element: '.calendar',
         on: 'bottom'

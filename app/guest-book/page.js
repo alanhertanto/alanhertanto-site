@@ -13,15 +13,13 @@ export default function GuestBook() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const stored = localStorage.getItem("guestbookEntries");
-    if (stored) setEntries(JSON.parse(stored));
+    fetch("/api/guestbook")
+      .then((res) => res.json())
+      .then((data) => setEntries(data))
+      .catch(() => setError("Gagal memuat data."));
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("guestbookEntries", JSON.stringify(entries));
-  }, [entries]);
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
 
@@ -29,29 +27,45 @@ export default function GuestBook() {
       setError("Nama dan pesan wajib diisi.");
       return;
     }
+
     if (email && !/\S+@\S+\.\S+/.test(email)) {
       setError("Format email tidak valid.");
       return;
     }
 
     const newEntry = {
-      id: Date.now(),
       name: name.trim(),
       email: email.trim(),
       message: message.trim(),
-      date: new Date().toISOString(),
     };
 
-    setEntries([newEntry, ...entries]);
-    setName("");
-    setEmail("");
-    setMessage("");
+    try {
+      const res = await fetch("/api/guestbook", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newEntry),
+      });
+
+      if (!res.ok) {
+        const err = await res.json();
+        setError(err.error || "Gagal mengirim pesan.");
+        return;
+      }
+
+      const savedEntry = await res.json();
+      setEntries([savedEntry, ...entries]);
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (err) {
+      setError("Terjadi kesalahan saat mengirim.");
+    }
   };
 
   return (
     <PhoneFrame>
       <Navbar />
-      <div className="flex flex-col h-full  mt-20 px-4">
+      <div className="flex flex-col h-full mt-20 px-4">
         <h1 className="text-yellow-500 font-bold text-xl mb-4 text-center">Guest Book</h1>
 
         <form onSubmit={handleSubmit} className="mb-4 space-y-3">
@@ -91,9 +105,7 @@ export default function GuestBook() {
 
         <div className="flex-1 overflow-y-auto custom-scroll">
           {entries.length === 0 ? (
-            <p className="text-yellow-300 text-center mt-8">
-              Belum ada pesan.
-            </p>
+            <p className="text-yellow-300 text-center mt-8">Belum ada pesan.</p>
           ) : (
             <ul className="space-y-4">
               {entries.map(({ id, name, email, message, date }) => (
@@ -103,7 +115,10 @@ export default function GuestBook() {
                 >
                   <div className="flex justify-between text-xs text-yellow-700 mb-1 font-semibold">
                     <span>{name}</span>
-                    <span>{new Date(date).toLocaleString("id-ID", { dateStyle: "short", timeStyle: "short" })}</span>
+                    <span>{new Date(date).toLocaleString("id-ID", {
+                      dateStyle: "short",
+                      timeStyle: "short"
+                    })}</span>
                   </div>
                   <p className="whitespace-pre-line">{message}</p>
                   {email && (
